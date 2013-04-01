@@ -29,7 +29,7 @@ class Stopwatch:
         self.__currentLap__ = 0
         self.__startTime__ = time.time()
         self.__update__()
-        print self.summary
+        return
         
     def stop(self):
         # Stop/Pause the stopwatch without clearing it.
@@ -66,3 +66,4 @@ class Stopwatch:
             
         totalTime = lapTime + self.__currentLap__
         self.summary = 'Total time: ' + str(totalTime) + lapSummary + '\nCurrent Lap: ' + str(self.__currentLap__)
+        return
