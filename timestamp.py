@@ -1,8 +1,7 @@
 #!/usr/bin/env python
-
 import datetime
 
-class timestamp:
+class Timestamp:
    
     def pretty(self):
         '''Return the current time in the format 2012-06-14 2:24:56pm.'''

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import time
 
-class stopwatch:
+class Stopwatch:
 
     __startTime__ = None
     __currentLap__ =  0
