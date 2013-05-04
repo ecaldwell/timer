@@ -23,11 +23,10 @@ A Python package to assist with measuring script running time.
     
 
 #### Timestamp
-    from timer.timestamp import Timestamp
-    theTime = Timestamp()
+    from timer import timestamp
     
-    print theTime.pretty()
+    print timestamp.pretty()
     2013-04-01 11:45:58AM
     
-    print theTime.raw()
+    print timestamp.raw()
     20130401114606
