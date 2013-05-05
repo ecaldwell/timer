@@ -16,5 +16,5 @@ def raw():
 
 def unix():
     '''Return the current time in the format 1367770445.'''
-    theTime time.time()
+    theTime = time.time()
     return int(theTime)
