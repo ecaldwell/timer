@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Timer by ecaldwell</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Timer</h1>
+        <p>A python package for figuring out how long stuff runs.</p>
+
+        <p class="view"><a href="https://github.com/ecaldwell/timer">View the Project on GitHub <small>ecaldwell/timer</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ecaldwell/timer/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ecaldwell/timer/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ecaldwell/timer">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="timer" class="anchor" href="#timer"><span class="octicon octicon-link"></span></a>timer</h1>
+
+<p>A Python package to assist with measuring script running time.</p>
+
+<h3>
+<a name="sample-usage" class="anchor" href="#sample-usage"><span class="octicon octicon-link"></span></a>Sample usage</h3>
+
+<h4>
+<a name="stopwatch" class="anchor" href="#stopwatch"><span class="octicon octicon-link"></span></a>Stopwatch</h4>
+
+<pre><code>import time
+from timer.stopwatch import Stopwatch
+myStopwatch = Stopwatch()
+
+myStopwatch.start()
+time.sleep(2)
+myStopwatch.lap()
+time.sleep(3)
+myStopwatch.stop()
+
+print myStopwatch.summary
+Total time: 5.0
+Lap 1: 2.0
+Current Lap: 3.0
+</code></pre>
+
+<h4>
+<a name="timestamp" class="anchor" href="#timestamp"><span class="octicon octicon-link"></span></a>Timestamp</h4>
+
+<pre><code>from timer import timestamp
+
+print timestamp.pretty()
+2013-04-01 11:45:58AM
+
+print timestamp.raw()
+20130401114606
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ecaldwell">ecaldwell</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
